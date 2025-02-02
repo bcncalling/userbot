@@ -14,26 +14,11 @@ except ImportError:
 from userbot.modules import load_modules
 load_modules()
 
-async def check_userbot_status():
-    if user._is_running:
-        LOGGER.info("userbot has started successfully.")
-        print("userbot started successfully.")
-    else:
-        LOGGER.error("userbot failed to start.")
-        print("userbot failed to start.")
 
 async def main():
     LOGGER.info("Starting user Bot...")
     await user.start()
-    
-    try:
-        await user.start()
-        await check_userbot_status()
-    except Exception as e:
-        LOGGER.error(f"Failed to start userbot: {e}")
-        print(f"Error: {e}")
-        raise SystemExit("userbot failed to start.")
-
+    await check_userbot_status()
     LOGGER.info("user Bot has started successfully!")
     print("Bot started successfully.")
     await idle()
