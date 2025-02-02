@@ -1,0 +1,11 @@
+git+https://github.com/TG-BOTSNETWORK/PyroBeta@maste
+aiofiles
+aiohttp
+asyncio
+python-dotenv
+validators
+rich
+TgCrypto
+ffmpeg-python
+ffmpeg
+youtube-search
