@@ -18,7 +18,6 @@ load_modules()
 async def main():
     LOGGER.info("Starting user Bot...")
     await user.start()
-    await check_userbot_status()
     LOGGER.info("user Bot has started successfully!")
     print("Bot started successfully.")
     await idle()
