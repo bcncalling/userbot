@@ -1,4 +1,4 @@
-git+https://github.com/TG-BOTSNETWORK/PyroBeta@maste
+git+https://github.com/TG-BOTSNETWORK/PyroBeta@master
 aiofiles
 aiohttp
 asyncio
